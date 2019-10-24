@@ -4,7 +4,17 @@
 
 # 2.0正式版 - 说明文档
 
-***[English Edition (英文版)](./README.md)***
+***[English Edition (英文版)](./README.md)***  **... 请不要吝啬，一个点击，给我一颗心(Star), 已是莫大的荣耀。**  **:)**
+
+*这是全球发行的第一个同时支持树莓派全系64位硬件的64位系统 !!!（包括：2Bv1.2，3B，3B+，3A+，4B）*
+
+```
+总有各类人群喷子千方百计找人把柄,为了避免误导,
+我们对所有使用中、应用到的帮助、借鉴都会加以说明,如有遗漏，欢迎大家及时反馈给我们加上
+再次致谢所有帮助过我们的人
+```
+
+----
 
 \- **树莓派64位操作系统** - **OPENFANS开源社区 & 树莓派爱好者社区** - **联合出品** -
 
@@ -16,20 +26,24 @@
 
 **除本文档外本Git仓库中的其他任何文档已不再维护（本文链接的文档除外），仅作为开发人员存档，特此说明!!!**
 
+**Gitee(码云)仓库地址**: [gitee.com/openfans-community/Debian-Pi-Aarch64](https://gitee.com/openfans-community/Debian-Pi-Aarch64)
+
+**Github仓库地址**: [github.com/openfans-community-offical/Debian-Pi-Aarch64](https://github.com/openfans-community-offical/Debian-Pi-Aarch64)
+
 ## 注意
 
 - 本文中所提到的执行的所有命令，没有特殊说明的情况下，默认都是在 **root** 用户的权限下执行！！
 
 - 遇到任何问题的时候，请保证先将系统、固件及内核更新至**最新**版本，你可以点击 **[此处](./README_zh.md#5%E6%9B%B4%E6%96%B0%E5%8F%8A%E5%8D%87%E7%BA%A7)** 了解如何更新系统及升级内核和固件，以及查看最新的系统和**内核、固件**版本。
 
-**快速友情提示：（ 2.0正式版 强烈建议更新至 “2019-10-05” 最新版固件 ）**
+**快速友情提示: (2.0正式版 强烈建议更新至 “2019-10-13” 最新版固件), 最新 “2019-1013” 的系统不需要再更新固件。**
 
 ```
 系统最新版本：
-2019-10-03-v2019-2.0-Release
+2019-10-13-v2019-2.0-Release
 
 内核及固件最新版本：
-2019-10-05-v2019-2.0-Release ( 建议更新 )
+2019-10-13-v2019-2.0-Release ( 建议更新 )
 ```
 
 ## 赞助
@@ -116,6 +130,10 @@
 
 [- 3-16.1 图形化桌面环境使用配置文件连接无线网络](./README_zh.md#3-161%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%BF%9E%E6%8E%A5%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C)
 
+[3-17. 配套应用程序使用说明](./README_zh.md#3-17%E9%85%8D%E5%A5%97%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
+
+[- 3-17.1 WPS Office ARM64位 桌面版安装说明](./README_zh.md#3-171-wps-office-arm64%E4%BD%8D-%E6%A1%8C%E9%9D%A2%E7%89%88%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E)
+
 ----
 
 [4.虚拟机使用说明](./README_zh.md#4%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
@@ -156,6 +174,7 @@
 
 [8. 招募](./README_zh.md#8%E6%8B%9B%E5%8B%9F)
 
+[9. 致谢](https://github.com/openfans-community-offical/Debian-Pi-Aarch64/blob/master/README_zh.md#9%E8%87%B4%E8%B0%A2)
 
 ----
 
@@ -166,7 +185,7 @@
 
 MacOS_Mojave主题桌面截图
 
-![macos](./images/macos1.png)
+![macos](./images/macos1.jpg)
 
 无桌面加强版Web管理界面
 
@@ -194,11 +213,11 @@ CecOS CaaS 容器云 集群管理
 
 MacOS_Mojave主题桌面截图 多媒体支持
 
-![macos](./images/macos2.png)
+![macos](./images/macos2.jpg)
 
 深度(Deepin)桌面截图
 
-![Deepin桌面1](./images/deepin_desktop_min.png)
+![Deepin桌面1](./images/deepin_desktop_min.jpg)
 
 深度(Deepin)桌面截图
 
@@ -206,19 +225,53 @@ MacOS_Mojave主题桌面截图 多媒体支持
 
 深度(Deepin)桌面截图
 
-![pi4桌面1](./images/p4-1.png)
+![pi4桌面1](./images/p4-1.jpg)
 
 MacOS_Mojave主题桌面截图 虚拟机图形化管理器
 
-![pi4VMM](./images/vmm.png)
+![pi4VMM](./images/vmm.jpg)
+
+----
 
 MacOS_Mojave主题桌面截图 运行 Android App: 刀塔
 
-![pi4Android1](./images/apk0.png)
+![pi4Android1](./images/apk0.jpg)
 
 MacOS_Mojave主题桌面截图 运行 Android App: WPS和刀塔
 
-![pi4Android2](./images/apk1.png)
+![pi4Android2](./images/apk1.jpg)
+
+MacOS_Mojave主题桌面截图 运行 *WPS* 桌面版
+
+![wps_arm64](./images/wps.jpg)
+
+----
+
+**MacOS_Mojave主题桌面截图：在Qemu中运行Windows Arm桌面版**
+
+![qemu_win_arm_0](./images/win0.jpeg)
+
+*在Qemu中安装 Windows Arm版本*
+
+![qemu_win_arm_1](./images/win1.jpeg)
+
+*Windows Arm版 基地桌面*
+
+![qemu_win_arm_2](./images/win2.jpeg)
+
+*Windows Arm版 系统信息*
+
+![qemu_win_arm_3](./images/win3.jpeg)
+
+*Windows Arm版 运行X86桌面版QQ*
+
+![qemu_win_arm_4](./images/weichat.jpg)
+
+*Windows Arm版 运行X86桌面版微信*
+
+![qemu_win_arm_5](./images/tim.jpg)
+
+*Windows Arm版 运行X86桌面版TIM*
 
 ----
 
@@ -244,7 +297,7 @@ MacOS_Mojave主题桌面截图 运行 Android App: WPS和刀塔
 
 - **2019年7月6日，历时半个月的努力，OPENFANS和树莓派爱好者基地联合发布了新的Debian-Pi-Aarch64 2.0系统。**
 
-- **这是全球第一个发行的支持树莓派4B的64位系统 !!!!!!!!**
+- **这是全球发行的第一个同时支持树莓派全系64位硬件的64位系统!!!（包括：2Bv1.2，3B，3B+，3A+，4B）**
 
 新的2.0正式版开启了全系的3D加速支持（通过FKMS实现），正式引入**OPENFANS的容器云管理平台** (CecOS CaaS，基于开源的Portainer构建)，较1.0系统将更为完善和强大！
 
@@ -817,40 +870,155 @@ fbterm
 安装 RealVNC
 
 ```
-dpkg --add-architecture armhf ; apt update
-cd ~ ; wget https://www.realvnc.com/download/file/vnc.files/VNC-Server-6.6.0-Linux-ARM.deb
-apt install ./VNC-Server-6.6.0-Linux-ARM.deb
-rm -rf ./VNC-Server-6.6.0-Linux-ARM.deb
-dpkg --remove-architecture armhf ; apt update
-systemctl enable vncserver-x11-serviced.service ; systemctl start vncserver-x11-serviced.service
+vnc_pkg='VNC-Server-6.6.0-Linux-ARM.deb' ; \
+sudo \
+sed -i '/deb http:\/\/mirrors.tuna.tsinghua.edu.cn\/debian\/ sid main non-free contrib/d' \
+/etc/apt/sources.list ; \
+sudo apt clean all ; \
+sudo echo 'deb http://mirrors.tuna.tsinghua.edu.cn/debian/ sid main non-free contrib' \
+>>/etc/apt/sources.list ; \
+sudo dpkg --add-architecture armhf ; sudo apt update ; \
+cd ~ ; wget https://www.realvnc.com/download/file/vnc.files/$vnc_pkg ; \
+sudo apt install ./$vnc_pkg ; \
+rm -rf ./$vnc_pkg ; \
+sudo dpkg --remove-architecture armhf ; sudo apt update ; \
+sudo systemctl enable vncserver-x11-serviced.service ; \
+sudo systemctl start vncserver-x11-serviced.service ; \
+sudo \
+sed -i '/deb http:\/\/mirrors.tuna.tsinghua.edu.cn\/debian\/ sid main non-free contrib/d' \
+/etc/apt/sources.list ; \
+sudo apt clean all ; sudo apt update
 ```
+
+**注意：**
+
+```
+sudo \
+sed -i '/deb http:\/\/mirrors.tuna.tsinghua.edu.cn\/debian\/ sid main non-free contrib/d' \
+/etc/apt/sources.list ; \
+```
+
+**在上面安装RealVNC过程中的这条命令千万别漏掉!!!**
 
 点击 [此处](https://www.realvnc.com/en/connect/download/viewer/) 前往下载RealVNC的客户端。
 
 安装并运行客户端，直接输入IP地址即可，不需要填写端口，用户名和密码是你系统的登录用户和密码。
 
-PS:
+**说明:**
 
-Realvnc的一些高级说明
+*Realvnc的一些高级说明*
+
+#### 将RealVNC安装为系统的守护进程服务模式
+
+启动或停止RealVNC服务:
 
 ```
-Installed systemd unit for VNC Server in Service Mode daemon
-Start or stop the service with:
-  systemctl (start|stop) vncserver-x11-serviced.service
+systemctl (start-stop) vncserver-x11-service.service
+```
 
-Mark or unmark the service to be started at boot time with:
-  systemctl (enable|disable) vncserver-x11-serviced.service
+启用或取消RealVNC服务开机自启动:
 
-Installed systemd unit for VNC Server in Virtual Mode daemon
+```
+systemctl (enable-disable) vncserver-x11-service.service
+```
 
-Start or stop the service with:
-  systemctl (start|stop) vncserver-virtuald.service
+杀死所有相关的服务进程:
 
-Mark or unmark the service to be started at boot time with:
-  systemctl (enable|disable) vncserver-virtuald.service
-
-Kill All process：
+```
 killall vncserver-x11-core vncserver-x11 vncagent vncserverui
+```
+
+**当你没有外接显示器的时候你需要按以下方法操作**
+
+*RealVNC虚拟显示服务模式*
+
+在此模式下，VNC连接地址为：
+
+```
+你树莓派的IP地址:1
+```
+
+```
+## A模式：
+
+将RealVNC安装为系统的守护进程虚拟显示服务模式
+(这个功能需要RealVNC的license授权)
+
+启用或关闭RealVNC虚拟显示服务：
+
+    systemctl (start-stop) vncserver-virtuald.service
+
+启用或取消RealVNC虚拟显示服务开机启动：
+
+    systemctl (enable-disable) vncserver-virtuald.service
+```
+
+```
+## B模式：
+
+运行RealVNC安装为系统的守护进程虚拟显示服务的另一种模式：
+(自定义方法，不需要授权)
+(参考自Pi官方论坛 https://www.raspberrypi.org/forums/viewtopic.php?t=249124)
+
+按照以下步骤操作：
+
+1. 安装软件包：
+
+    apt install xserver-xorg-video-dummy -y
+
+2. 执行命令：
+
+    killall vncserver-x11-core vncserver-x11 vncagent vncserverui ;\
+    systemctl stop vncserver-x11-serviced.service ;\
+    systemctl disable vncserver-x11-serviced.service ;\
+    systemctl stop vncserver-virtuald.service ;\
+    systemctl disable vncserver-virtuald.service
+
+3. 创建服务脚本文件：
+
+/usr/lib/systemd/system/vncserver-pi.service
+
+---------------------------------------------------
+[Unit]
+Description=VNC Server in Virtual Mode daemon
+After=network.target
+
+[Service]
+User=pi
+Type=forking
+ExecStart=/usr/bin/vncserver :1
+ExecStop=/usr/bin/vncserver -kill :1
+Restart=on-failure
+RestartSec=5
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+---------------------------------------------------
+
+4. 为所有系统用户启用Xorg系统服务，执行命令：
+
+    vncinitconfig -enable-system-xorg
+
+    所有的选择都回答："Y"
+
+    如果你想禁用可以执行：
+
+    vncinitconfig -disable-system-xorg
+
+5. 生成 "/etc/X11/vncserver-virtual.conf" 配置文件，执行：
+
+    vncinitconfig -virtual-xorg-conf
+
+6. 将服务设置为开机自启动并启动服务：
+
+    systemctl enable vncserver-pi.service
+    systemctl start vncserver-pi.service
+
+
+已知问题：
+该模式下无法重启vncserver-pi.service服务，
+你只能通过重启系统来实现。
 ```
 
 ### 3-11.切换声音输出通道
@@ -955,6 +1123,22 @@ sed -i  \
 
 最后重启即可。
 
+### 3-17.配套应用程序使用说明
+
+#### 3-17.1 WPS Office ARM64位 桌面版安装说明
+
+至下载仓库的**APP**文件夹，对应下载最新的一键安装包，解压后进入安装包目录，在**已经连接公网的环境下**，
+
+使用**root**用户身份执行以下命令即可：
+
+```
+sudo ./install.sh
+```
+
+**注意：** 仅在 *macOS_Mojave主题定制桌面 (全功能版)* 上通过安装测试 !!!
+
+**仅供测试和学习使用!!!**
+
 ----
 
 ## 4.虚拟机使用说明
@@ -1033,12 +1217,11 @@ ssh -p 2222 root@本机的IP地址
 
 ```
 1.不是每个人都需要默认集成，太臃肿；
-2.比较啃爹，污染系统；
-3.宝塔对ARM64兼容性糊涂的一笔；
-4.宝塔不只是安装那么简单的一件事，里面需要的软件在ARM系统下几乎全部需要重新编译，
-兼容性差，耗时超级长，可以装得你怀疑人生，装得你想哭；
-5.我们使用中遇到的各种奇葩坑的问题；
-6.不是说宝塔整体不好，至少在ARM64上的兼容性是个相当大的问题，感觉就跟官方没做过测试一样，干的都是小白鼠的活。
+2.环境构建造成更复杂的兼容性问题；
+3.宝塔对ARM64兼容性不够友好；
+4.宝塔不只是安装那么简单的一件事，里面需要的软件在ARM系统下编译耗时过长；
+5.我们使用中的部分版本组合问题；
+6.不是说宝塔整体不好，至少在ARM64上的兼容性上对小白是个很大的挑战。
 ```
 
 **使用方法：**
@@ -1470,3 +1653,25 @@ OPENFANS Offical Site 官网： [www.openfans.org](http://www.openfans.org)
 来信请说明具体情况和意图并留下您的**联系电话**，谢谢合作。
 
 ----
+
+## 9.致谢
+
+OSCHINA : [Git支持](https://gitee.com/)
+
+Raspbian : *官方系统 (自动扩容脚本部分参考)*
+
+UMRnInside : *项目 [UMRnInside/RPi-arm64](https://github.com/UMRnInside/RPi-arm64) (自动扩容脚本部分参考)*
+
+Andreiw : *项目 [andreiw/RaspberryPiPkg](https://github.com/andreiw/RaspberryPiPkg) (1.0版本引用的EFI固件)*
+
+sakaki : *[Link](https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=244478) (内核引导的问题参考)*
+
+margetts99 : *[Link](http://bbs.pifan.org/?thread-132.htm) (WPS的集成建议和共享问题的报告)*
+
+Windows Arm On Qemu: *参考 [链接1](https://github.com/virtio-win/kvm-guest-drivers-windows/issues/177#issuecomment-468149012) & [链接2](https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=248345&sid=d4dd0681937f13e9c0cb4f04e5b54979)*
+
+**以及其他无私赞助和帮助过我们的朋友们！**
+
+----
+
+Once again despise the attack and slander called the dog egg X!

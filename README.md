@@ -4,13 +4,27 @@
 
 *The newest Raspberry Pi 64-bit OS 2.0 Release!!!*
 
+*This is the first 64-bit system in the world to support all Raspberry Pi 64-bit hardware!!! (Include: 2Bv1.2, 3B, 3B+, 3A+, 4B)*
+
+```
+There are always people of all kinds of people who do everything possible to find someone's handle, 
+in order to avoid misleading,
+We will explain all the help and reference that we have used and applied. 
+If there are any omissions, please feel free to give us feedback in time.
+Thanks again to all those who have helped us.
+```
+
 ## Official Documentation Version 2.0
 
 ***[中文版(Chinese)](README_zh.md)***
 
 ***English edition translation is continuously optimized and adjusted ...***
 
+Give me a star, just a click, I will be very happy and satisfied...  :)
 
+**Gitee Repo:** [gitee.com/openfans-community/Debian-Pi-Aarch64](https://gitee.com/openfans-community/Debian-Pi-Aarch64)
+
+**Github Repo:** [github.com/openfans-community-offical/Debian-Pi-Aarch64](https://github.com/openfans-community-offical/Debian-Pi-Aarch64)
 
 ----
 
@@ -34,14 +48,16 @@ The **"Old Readme"** was viewed **[here](./README_ORGI.md).** ( - Just A Chinese
 
 ## Notice:
 
-*The official version 2.0 is most suggested to upgrade to the latest firmware version:* **"2019-10-05"**
+*The official version 2.0 is most suggested to upgrade to the latest firmware version:* **"2019-10-13"**
+
+*The system version "2019-10-13-v2019-2.0-Release" don't need upgrade the kernel and firmware to "2019-10-13"*
 
 ```
 The latest version of the system:
-2019-10-03-v2019-2.0-Release
+2019-10-13-v2019-2.0-Release
 
 The latest version of kernel and firmware:
-2019-10-05-v2019-2.0-Release (recommended update)
+2019-10-13-v2019-2.0-Release (recommended update)
 ```
 
 ## Donation
@@ -128,13 +144,17 @@ Thanks for your donation! We'll get the greatest power from your encourage!
 
 [- 3-16.1 Using Profiles To Connect To The Wireless Networks Of Graphical Desktop Environment](./README.md#3-161-using-profiles-to-connect-to-the-wireless-networks-of-graphical-desktop-environment)
 
+[3-17. Extra Application Instructions](./README.md#3-17-extra-application-instructions)
+
+[- 3-17.1 WPS Office Arm 64-bit Desktop Installation Note](./README.md#3-171-wps-office-arm-64-bit-desktop-installation-note)
+
 ----
 
 [4. Virtual Machine Instructions](./README.md#4-virtual-machine-instructions)
 
-[4-1. Standard Virtual Machines PKG Instruction](./README.md#4-1-standard-virtual-machines-pkg-instruction)
+[4-1. Standard Virtual Machines PKG Instructions](./README.md#4-1-standard-virtual-machines-pkg-instructions)
 
-[4-2 BT-Panel Virtual Machine PKG Instruction](./README.md#4-2-bt-panel-virtual-machine-pkg-instruction)
+[4-2 BT-Panel Virtual Machine PKG Instructions](./README.md#4-2-bt-panel-virtual-machine-pkg-instructions)
 
 [4-3 How To Expand The Size Of A Virtual Machine Disk](./README.md#4-3-how-to-expand-the-size-of-a-virtual-machine-disk)
 
@@ -146,7 +166,7 @@ Thanks for your donation! We'll get the greatest power from your encourage!
 
 [5-2 Update Kernel And Firmware](./README.md#5-2-update-kernel-and-firmware)
 
-[5-3 Update Instruction](./README.md#5-3-update-instruction)
+[5-3 Update Instructions](./README.md#5-3-update-instructions)
 
 [5-4 Latest Current Version](./README.md#5-4-latest-current-version)
 
@@ -168,6 +188,8 @@ Thanks for your donation! We'll get the greatest power from your encourage!
 
 [8. Join US!](./README.md#8-join-us)
 
+[9. Thanks](./README.md#9-thanks)
+
 ----
 
 
@@ -179,7 +201,7 @@ Thanks for your donation! We'll get the greatest power from your encourage!
 
 Screenshot of the macOS-Mojave theme desktop by XFCE.
 
-![macos](./images/macos1.png)
+![macos](./images/macos1.jpg)
 
 Screenshot of the BaseOS Plus++ version: Web Management login interface.
 
@@ -207,11 +229,11 @@ Screenshot of the CecOS CaaS Container Cloud: Cluster Management.
 
 Screenshot of the macOS-Mojave theme desktop: Multimedia support.
 
-![macos](./images/macos2.png)
+![macos](./images/macos2.jpg)
 
 Screenshot of the Deepin desktop environment: Main Desktop.
 
-![Deepin桌面1](./images/deepin_desktop_min.png)
+![Deepin桌面1](./images/deepin_desktop_min.jpg)
 
 Screenshot of the Deepin desktop environment: Dashboard.
 
@@ -219,19 +241,53 @@ Screenshot of the Deepin desktop environment: Dashboard.
 
 Screenshot of the Deepin desktop environment: System Settings & System info.
 
-![pi4桌面1](./images/p4-1.png)
+![pi4桌面1](./images/p4-1.jpg)
 
 Screenshot of the macOS-Mojave Theme Desktop: Graphics Virtual Machine Manager (VMM). 
 
-![pi4VMM](./images/vmm.png)
+![pi4VMM](./images/vmm.jpg)
+
+----
 
 Screenshot of the macOS-Mojave Theme Desktop: Run Android App: DOTA.
 
-![pi4Android1](./images/apk0.png)
+![pi4Android1](./images/apk0.jpg)
 
 Screenshot of the macOS-Mojave Themed Desktop: Run Android App: WPS (A China office compatible software) and DOTA.
 
-![pi4Android2](./images/apk1.png)
+![pi4Android2](./images/apk1.jpg)
+
+Screenshot of the macOS-Mojave Themed Desktop: Run WPS-ARM64-Edition-App (A China office compatible software).
+
+![wps_arm64](./images/wps.jpg)
+
+----
+
+**Screenshot of the macOS-Mojave Themed Desktop: Run Windows 10 Arm Desktop Edition On Qemu.**
+
+![qemu_win_arm_0](./images/win0.jpeg)
+
+*Install Arm windows on qemu.*
+
+![qemu_win_arm_1](./images/win1.jpeg)
+
+*Arm desktop PIFAN desktop.*
+
+![qemu_win_arm_2](./images/win2.jpeg)
+
+*Arm windows on qemu: Systeminfo.*
+
+![qemu_win_arm_3](./images/win3.jpeg)
+
+*Arm windows on qemu: Run QQ X86 desktop edition App.*
+
+![qemu_win_arm_4](./images/weichat.jpg)
+
+*Arm windows on qemu: Run WeiChat X86 desktop edition App.*
+
+![qemu_win_arm_5](./images/tim.jpg)
+
+*Arm windows on qemu: Run TIM X86 desktop edition App.*
 
 ----
 
@@ -251,13 +307,13 @@ Cuz the Raspberry Pi has the best compatible from Debian OS (This is inseparable
 
 This system is completely different from any systems we released before (also including the previous 64-bit Debian we published), we have all built from zero-os baseline this time and built a new automatic compilation and packaging, the testing system in our lab. We also redefined the packaging process and adjust all the relevant configurations, make a lot of modifications, adjustments and optimizations for the system, fixed a lot of bugs of the kernel. A lot of new features have been added, especially with the support for the hardware KVM virtualization acceleration and optimization for Docker features tuning.
 
-**We have specifically redefined and optimized our own cross compiler chain-tool and compiler for rebuild the base kernel and modules of Raspberry Pi when we were publishing the version 2.0 what is more greatly optimized and improved compiler faster and efficiency (About cross compiler chain-tool and compiler, you can refer to Huawei's Ark compiler, they have the same effect, our compiler is optimized for basic compilation tools such as C, C++, G++, ASM, NM, ld, CMAKE, and Glib, etc., Specifically target the raspberry-based hardware, ARM aarch64 A53 and ARM-v8a A72 and also including instruction set of hardware, etc.)**
+**We have specifically redefined and optimized our own cross compiler chain-tool and compiler for rebuild the base kernel and modules of Raspberry Pi when we were publishing the version 2.0 what is more greatly optimized and improved compiler faster and efficiency (About cross compiler chain-tool and compiler, you can refer to Huawei's Ark compiler, they have the same effect, our compiler is optimized for basic compilation tools such as C, C++, G++, ASM, NM, ld, CMAKE, and Glib, etc., Specifically target the raspberry-based hardware, ARM aarch64 A53 and ARM-v8a A72 and also including instructions set of hardware, etc.)**
 
 On June 20, 2019, the Raspberry Pi foundation released the new fourth-generation single-board machine "Raspberry Pi 4B". We got the 4th-generation 4G version from the Raspberry Pi official Cambridge Global Store for the first time.
 
 - **On July 6, 2019, half a month hard-working after Pi4 released, The OPENFANS and the Pi Fan base community released the new Debian-Pi-Aarch64 OS version 2.0 release together.**
 
-- **This is the world's 64-bit OS which is first support to Raspberry Pi 4B !!**
+- **This is the first 64-bit system in the world to support all Raspberry Pi 64-bit hardware!!! (Include: 2Bv1.2, 3B, 3B+, 3A+, 4B)**
 
 All of the new version 2.0 has 3D acceleration supported (With FKMS), and finally introduced the **OPENFANS Container Cloud Management Platform**  supported (Also called CecOS CaaS, based build from an open-source project which is called Portainer) which is be more perfect and powerful than system version 1.0!
 
@@ -334,7 +390,7 @@ All the version 2.0 system images are used "ext4" file system as default, the Ts
 
 **☆ :** Stands for supported and default disabled. Need to be started manually. 
 
-(There will be an instruction for how to use this service in this document.)
+(There will be an instructions for how to use this service in this document.)
 
 **X :** Stands for not supported.
 
@@ -886,38 +942,155 @@ fbterm
 Install RealVNC
 
 ```
-dpkg --add-architecture armhf ; apt update
-cd ~/ ; wget https://www.realvnc.com/download/file/vnc.files/VNC-Server-6.6.0-Linux-ARM.deb
-apt install ./VNC-Server-6.6.0-Linux-ARM.deb
-rm -rf ./VNC-Server-6.6.0-Linux-ARM.deb
-dpkg --remove-architecture armhf ; apt update
-systemctl enable vncserver-x11-serviced.service ; systemctl start vncserver-x11-serviced.service
+vnc_pkg='VNC-Server-6.6.0-Linux-ARM.deb' ; \
+sudo \
+sed -i '/deb http:\/\/mirrors.tuna.tsinghua.edu.cn\/debian\/ sid main non-free contrib/d' \
+/etc/apt/sources.list ; \
+sudo apt clean all ; \
+sudo echo 'deb http://mirrors.tuna.tsinghua.edu.cn/debian/ sid main non-free contrib' \
+>>/etc/apt/sources.list ; \
+sudo dpkg --add-architecture armhf ; sudo apt update ; \
+cd ~ ; wget https://www.realvnc.com/download/file/vnc.files/$vnc_pkg ; \
+sudo apt install ./$vnc_pkg ; \
+rm -rf ./$vnc_pkg ; \
+sudo dpkg --remove-architecture armhf ; sudo apt update ; \
+sudo systemctl enable vncserver-x11-serviced.service ; \
+sudo systemctl start vncserver-x11-serviced.service ; \
+sudo \
+sed -i '/deb http:\/\/mirrors.tuna.tsinghua.edu.cn\/debian\/ sid main non-free contrib/d' \
+/etc/apt/sources.list ; \
+sudo apt clean all ; sudo apt update
 ```
+
+**Attention please!!**
+
+```
+sudo \
+sed -i '/deb http:\/\/mirrors.tuna.tsinghua.edu.cn\/debian\/ sid main non-free contrib/d' \
+/etc/apt/sources.list ; \
+```
+
+**Don't miss this command in the process of installing RealVNC on it above!!!**
 
 Click [here](https://www.realvnc.com/en/connect/download/viewer/) to download RealVNC client
 
 Install and run the client, enter the IP address directly, do not need to fill in the port, username, and password is your system's login user and password.
 
-PS:
+**PS:**
 
 *Some advanced instructions for Realvnc:*
 
-```
-Installed system unit for VNC Server in Service Mode Mode Daemon
+#### Installed system unit for VNC Server in Service Mode Mode Daemon
+
 Start or stop service with:
-  systemctl (start-stop) vncserver-x11-service.service
+
+```
+systemctl (start-stop) vncserver-x11-service.service
+```
 
 Mark or unmark the service to be started at boot time with:
-  systemctl (enable-disable) vncserver-x11-service.service
+
+```
+systemctl (enable-disable) vncserver-x11-service.service
+```
+
+How to kill all Process:
+
+```
+killall vncserver-x11-core vncserver-x11 vncagent vncserverui
+```
+
+**When you do not have a monitor you need do this way**
+
+*VNC Server Virtual Mode*
+
+In this mode, the VNC connect address is:
+
+```
+your-Rpi-ip-address:1
+```
+
+```
+## Mode A:
 
 Installed system unit for VNC Server in Virtual Mode Daemon
-Start or stop service with:
-  systemctl (start-stop) vncserver-virtuald.service
-Mark or unmark the service to be started at boot time with:
-  systemctl (enable-disable) vncserver-virtuald.service
+(This feature needs a RealVNC license)
 
-Kill All Process:
-killall vncserver-x11-core vncserver-x11 vncagent vncserverui
+Start or stop service with:
+
+    systemctl (start-stop) vncserver-virtuald.service
+
+Mark or unmark the service to be started at boot time with:
+
+    systemctl (enable-disable) vncserver-virtuald.service
+```
+
+```
+## Mode B:
+
+Another way run Virtual Mode Daemon:
+(Custom way without license)
+(From Pi forum https://www.raspberrypi.org/forums/viewtopic.php?t=249124)
+
+Do as the follow steps:
+
+1. Install a package: 
+
+    apt install xserver-xorg-video-dummy -y
+
+2. Run command:
+
+    killall vncserver-x11-core vncserver-x11 vncagent vncserverui ;\
+    systemctl stop vncserver-x11-serviced.service ;\
+    systemctl disable vncserver-x11-serviced.service ;\
+    systemctl stop vncserver-virtuald.service ;\
+    systemctl disable vncserver-virtuald.service
+
+3. Create a service script: 
+
+/usr/lib/systemd/system/vncserver-pi.service
+
+---------------------------------------------------
+[Unit]
+Description=VNC Server in Virtual Mode daemon
+After=network.target
+
+[Service]
+User=pi
+Type=forking
+ExecStart=/usr/bin/vncserver :1
+ExecStop=/usr/bin/vncserver -kill :1
+Restart=on-failure
+RestartSec=5
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+---------------------------------------------------
+
+4. To enable the system Xorg server for all users, run:
+
+    vncinitconfig -enable-system-xorg
+
+    All answers need to choose "Y"
+
+    If you wanna disable, run:
+
+    vncinitconfig -disable-system-xorg
+
+5. Generate a "/etc/X11/vncserver-virtual.conf" conf file, run:
+
+    vncinitconfig -virtual-xorg-conf
+
+6. Then enable and start service:
+
+    systemctl enable vncserver-pi.service
+    systemctl start vncserver-pi.service
+
+
+Known issue:
+This mode isn't support restart vncserver-pi.service
+You need to reboot system.
 ```
 
 ### 3-11. Switch Sound Output Channels
@@ -1025,6 +1198,24 @@ sed -i  \
 
 Finally, after restart all done.
 
+### 3-17. Extra Application Instructions
+
+#### 3-17.1 WPS Office Arm 64-bit Desktop Installation Note
+
+Get the install package from download repo's "APP" folder, after extracting the installation package, go to the installation package directory.
+
+Then connect to the public network and execute the following command as the root user:
+
+```shell
+sudo ./install.sh
+```
+
+The program will be installed.
+
+**Note:** *Test only on the* **macOS Mojave theme custom desktop** *version!!* 
+
+**For testing and learning use only!!!**
+
 ----
 
 ## 4. Virtual Machine Instructions
@@ -1035,7 +1226,7 @@ Virtual machine resource packages are typically published as compression package
 apt update ; apt install tar gzip zip unzip bzip2 xz-utils -y
 ```
 
-### 4-1. Standard Virtual Machines PKG Instruction
+### 4-1. Standard Virtual Machines PKG Instructions
 
 Default user: root (remote permissions turned on), password: raspberry
 
@@ -1079,7 +1270,7 @@ Example of the command:
 ssh -p 2222 root@local-ip-address
 ```
 ----
-### 4-2 BT-Panel Virtual Machine PKG Instruction
+### 4-2 BT-Panel Virtual Machine PKG Instructions
 
 In order to take care of new users and respond to the voices of the people, we finally “integrated” the Pagoda for you, using the virtual machine, 32-bit super clean custom ARMHF virtual system optimized for the pagoda, even for virtual machines, The speed is also greatly stronger than the official backplane system (who has used and who will understand :) --).
 
@@ -1466,7 +1657,7 @@ After the completion, restart it.
 
 **Version 2.0 does not currently support upgrading from any other version and requires a new installation.**
 
-### 5-3 Update Instruction
+### 5-3 Update Instructions
 
 Click **[here](./update.md)** to see the update instructions.
 
@@ -1572,3 +1763,25 @@ Please contact us with any intent: **[admin@openfans.org](mailto:admin@openfans.
 Please write down the details and intentions and at least leave your **mobile phone number**, thank you for your cooperation.
 
 ----
+
+## 9. Thanks
+
+OSCHINA : [Support fot git repo](https://gitee.com/)
+
+Raspbian: Official system (automatic expansion script part reference)
+
+UMRnInside :Project [UMRnInside/RPi-arm64](https://github.com/UMRnInside/RPi-arm64)(refer to the automatic expansion script section)
+
+Andreiw: Project [andreiw/RaspberryPiPkg](https://github.com/andreiw/RaspberryPiPkg)(EFI firmware referenced in version 1.0)
+
+Sakaki : [link](https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=244478) (kernel boot problem reference)
+
+Margetts99 : [link](http://bbs.pifan.org/?thread-132.htm) (WPS integration recommendations and sharing issues report)
+
+Windows Arm On Qemu: *see [link1](https://github.com/virtio-win/kvm-guest-drivers-windows/issues/177#issuecomment-468149012) & [link2](https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=248345&sid=d4dd0681937f13e9c0cb4f04e5b54979)*
+
+**And all other friends who have privately sponsored and helped us!**
+
+----
+
+Once again despise the attack and slander called the dog egg X!
