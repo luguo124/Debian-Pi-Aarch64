@@ -8,6 +8,8 @@
 
 *这是全球发行的第一个同时支持树莓派全系64位硬件的64位系统 !!!（包括：2Bv1.2，3B，3B+，3A+，4B）*
 
+![catalina](./images/catalina.jpg)
+
 ```
 总有各类人群喷子千方百计找人把柄,为了避免误导,
 我们对所有使用中、应用到的帮助、借鉴都会加以说明,如有遗漏，欢迎大家及时反馈给我们加上
@@ -36,15 +38,23 @@
 
 - 遇到任何问题的时候，请保证先将系统、固件及内核更新至**最新**版本，你可以点击 **[此处](./README_zh.md#5%E6%9B%B4%E6%96%B0%E5%8F%8A%E5%8D%87%E7%BA%A7)** 了解如何更新系统及升级内核和固件，以及查看最新的系统和**内核、固件**版本。
 
-**快速友情提示: (2.0正式版 强烈建议更新至 “2019-10-13” 最新版固件), 最新 “2019-1013” 的系统不需要再更新固件。**
+**快速友情提示:**
+
+2.0正式版 强烈建议更新至 “**2019-12-30-2.0-U2**” 最新版固件, 最新 “2019-12-30-2.0-U2” 的系统不需要再更新固件。
 
 ```
 系统最新版本：
-2019-10-13-v2019-2.0-Release
+2019-12-30-v2019-2.0-U2-Release
 
 内核及固件最新版本：
-2019-10-13-v2019-2.0-Release ( 建议更新 )
+2019-12-30-v2019-2.0-U2-Release ( 建议更新 )
 ```
+
+2.0-U2将是整个2.0主线版本的最后一个主干发布版本。
+
+在2020年，我们即将开启全新的2.X主干发行版本的支持计划，敬请期待！
+
+*Focus on Edge computing and IoT core-net and hardware for the RPI ...*
 
 ## 赞助
 
@@ -114,7 +124,7 @@
 
 [3-9. 中文环境下TTY显示中文字体(非远程方式)](./README_zh.md#3-9%E4%B8%AD%E6%96%87%E7%8E%AF%E5%A2%83%E4%B8%8Btty%E6%98%BE%E7%A4%BA%E4%B8%AD%E6%96%87%E5%AD%97%E4%BD%93%E9%9D%9E%E8%BF%9C%E7%A8%8B%E6%96%B9%E5%BC%8F)
 
-[3-10. MacOS_Mojave主题桌面安装VNC远程](./README_zh.md#3-10macos_mojave%E4%B8%BB%E9%A2%98%E6%A1%8C%E9%9D%A2%E5%AE%89%E8%A3%85vnc%E8%BF%9C%E7%A8%8B)
+[3-10. macOS Mojave主题桌面支持Web界面VNC远程桌面访问](./README_zh.md#3-10macos-mojave%E4%B8%BB%E9%A2%98%E6%A1%8C%E9%9D%A2%E6%94%AF%E6%8C%81web%E7%95%8C%E9%9D%A2vnc%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2%E8%AE%BF%E9%97%AE)
 
 [3-11. 切换声音输出通道](./README_zh.md#3-11%E5%88%87%E6%8D%A2%E5%A3%B0%E9%9F%B3%E8%BE%93%E5%87%BA%E9%80%9A%E9%81%93)
 
@@ -129,6 +139,8 @@
 [3-16. FAQ常见问题说明](./README_zh.md#3-16faq%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E8%AF%B4%E6%98%8E)
 
 [- 3-16.1 图形化桌面环境使用配置文件连接无线网络](./README_zh.md#3-161%E5%9B%BE%E5%BD%A2%E5%8C%96%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%BF%9E%E6%8E%A5%E6%97%A0%E7%BA%BF%E7%BD%91%E7%BB%9C)
+
+[- 3-16.2 使用APT命令安装软件包时版本不匹配](./README_zh.md#3-162%E4%BD%BF%E7%94%A8apt%E5%91%BD%E4%BB%A4%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E5%8C%85%E6%97%B6%E7%89%88%E6%9C%AC%E4%B8%8D%E5%8C%B9%E9%85%8D)
 
 [3-17. 配套应用程序使用说明](./README_zh.md#3-17%E9%85%8D%E5%A5%97%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
 
@@ -368,13 +380,53 @@ upkg-xxxx(年)-xx(月)-xx(日)-vxxxx-x.x-zip/zip.xz
 |标准虚拟机套件|★|★|★|X|
 |宝塔虚拟机套件|★|★|★|X|
 
-**说明：**
+----
+
+**(1)说明：**
 
 **★ ：** 表示支持，并以默认启用，可直接使用。
 
-**☆ ：** 表示支持，但默认为启用服务，需要用户手动启动。（关于如果启用相关服务，在本文档中有说明。）
+**☆ ：** 表示支持，但默认未启用该服务，需要用户手动启动。（关于如果启用相关服务，在本文档中有说明。）
 
 **X ：** 表示不支持。
+
+**(2)服务开关：**
+
+Docker容器
+
+```
+手动开启：systemctl start docker.service
+手动停止：systemctl stop docker.service
+启用开机启动：systemctl enable docker.service
+禁用开机启动：systemctl disable docker.service
+```
+
+CecOS CaaS容器云（服务端口：8443）
+
+```
+手动开启：systemctl start cecos-caas.service
+手动停止：systemctl stop cecos-caas.service
+启用开机启动：systemctl enable cecos-caas.service
+禁用开机启动：systemctl disable cecos-caas.service
+```
+
+WebGUI管理平台（服务端口：9090）
+
+```
+手动开启：systemctl start cockpit.socket
+手动停止：systemctl stop cockpit.socket
+启用开机启动：systemctl enable cockpit.socket
+禁用开机启动：systemctl disable cockpit.socket
+```
+
+Web SSH客户端（服务端口：4200）
+
+```
+手动开启：systemctl start shellinabox.service
+手动停止：systemctl stop shellinabox.service
+启用开机启动：systemctl enable shellinabox.service
+禁用开机启动：systemctl disable shellinabox.service
+```
 
 ----
 
@@ -676,7 +728,7 @@ Linux有很多压缩算法：lz,lzo,xz,gzip,lzma...
 
 ### 2-7.MacOS_Mojave主题桌面
 
-![desktop](./images/apk0.png)
+![desktop](./images/apk0.jpg)
 
 默认桌面主题使用仿 **MacOS Mojave** 主题的桌面。
 
@@ -834,6 +886,8 @@ source-directory /etc/network/interfaces.d
 
 ### 3-8.深度桌面禁止自动升级的说明
 
+**在版本v2019-11-10之后(也包括版本2019-11-10在内)，深度系统已经支持升级。**
+
 由于 Deepin系统和上游仓库存在一定的兼容性问题(deepin本身的问题)，除非你清楚自己需要做什么，否则强烈建议不要使用以下的任何一条命令或者其他任何会使得系统进行升级的操作！！！所有的Deepin版本系统都需要注意，包括1.0和2.0的所有Deepin版本!
 
 ```
@@ -867,9 +921,95 @@ sudo adduser 你自己创建的其他用户名(若果有) video
 fbterm
 ```
 
-### 3-10.MacOS_Mojave主题桌面安装VNC远程
+### 3-10.macOS Mojave主题桌面支持Web界面VNC远程桌面访问
 
-安装 RealVNC
+![web vnc](./images/web-vnc.jpg)
+
+macOS Mojave主题桌面环境(全功能版) 在 *2019-11-17*(包括) 之后的版本默认情况下已支持Web界面的VNC远程桌面访问。
+
+```
+默认的VNC访问密码为: raspberry
+默认的WEB VNC访问地址为: http://你树莓派的IP地址:5901
+默认的客户端访问地址为: 你树莓派的IP地址:5900
+```
+
+您不能使用Web VNC界面和客户端在同一时间连接到同一个vnc服务器。
+
+如果要使用客户端连接vnc服务器，建议您使用RealVNC客户端，您可以单击 [此处](https://www.realvnc.com/en/connect/download/viewer/) 下载RealVNC客户端。
+
+#### Web VNC远程桌面使用说明
+
+访问系统默认的VNC有两种方法：
+
+● 连接了真实的显示器
+
+```
+VNC已默认启用，您无需执行任何操作。
+```
+
+● 未连接任何显示器
+
+```
+默认情况下已启用VNC服务，但如果未连接到任何真实的显示器，则应使用虚拟显示的支持，运行命令：
+"virtual-monitor-enable"
+以启用"虚拟显示器模式"，此后系统将自动重启并完成设置。
+```
+
+#### 重要
+
+```
+如果启用了"虚拟显示器模式"，则不能同时连接到真实的显示器(否则真实显示器将没有显示)，
+如果启用了"虚拟显示器模式"，请运行命令："virtual-monitor-disable"
+以禁用"虚拟显示器模式"来恢复正常。
+```
+
+**注意：系统默认未开启 "虚拟显示器模式"**
+
+#### Commands for default VNC
+
+**virtual-monitor-enable**
+
+```
+启用"虚拟显示器模式"，在没有外接真实显示器的时候使用。
+此后系统将自动重启并完成设置。
+```
+
+**virtual-monitor-disable**
+
+```
+启用"虚拟显示器模式"，以连接到真实显示器的时候使用(系统默认模式)。
+此后系统将自动重启并完成设置。
+```
+
+**enable-vnc**
+
+```
+启用VNC服务(系统默认已开启)。
+此后系统将自动重启并完成设置。
+```
+
+**disable-vnc**
+
+```
+禁用VNC服务。
+此后系统将自动重启并完成设置。
+```
+
+**vnc-passwd**
+
+```
+修改默认的VNC访问密码。
+```
+
+----
+
+如果需要安装另一个VNC服务器软件包(如RealVNC), 则可以执行以下操作：
+
+(安装前您需要先禁用我们系统默认的VNC服务)
+
+但是我们仍然建议您使用我们系统提供的默认VNC。
+
+#### 安装macOS Mojave主题桌面环境的RealVNC远程桌面
 
 ```
 vnc_pkg='VNC-Server-6.6.0-Linux-ARM.deb' ; \
@@ -1036,6 +1176,14 @@ amixer cset numid=3 2
 默认的设置为0，代表自动选择
 ```
 
+修改完音频设置后，需要重新启动Raspberry Pi，以使更改生效。
+
+**如果仍然无法通过HDMI接收声音:**
+
+在极少数情况下，有必要进行编辑config.txt以强制使用HDMI模式(与不发送声音的DVI模式相对)。
+
+您可以通过编辑 **/boot/config.txt** 文件并设置 **hdmi_drive=2** ，然后重新启动以使更改生效。
+
 ### 3-12.32位软件armhf支持
 
 ```
@@ -1125,6 +1273,38 @@ sed -i  \
 
 最后重启即可。
 
+#### 3-16.2使用APT命令安装软件包时版本不匹配
+
+**问题描述：**
+
+*在使用命令apt在线安装deb包时，遇到找不到匹配版本的问题，如：*
+
+```
+The following packages have unmet dependencies:
+ package-name-1 : Depends: package-name-2 ( >= x.x.x-xxx-2 ) but x.x.x-xxx-1 is to be installed
+              Recommends: package-name-3 but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+```
+
+亦或者是：
+
+```
+下列软件包有未满足的依赖关系：
+ package-name-1 : 依赖: package-name-2 ( >= x.x.x-xxx-2 ) 但是 x.x.x-xxx-1 正要被安装
+               依赖: package-name-3 但是它将不会被安装
+E: 无法修正错误，因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系。
+```
+
+**问题根源：**
+
+由于我们的系统引入了部分较新的上游软件包所致。
+
+**解决办法：**
+
+临时启用上游软件源**sid**仓库即可，在你的**apt**命令前加上`sid-used sudo`命令：
+
+例如：`sid-used sudo` **apt install package-name**
+
 ### 3-17.配套应用程序使用说明
 
 #### 3-17.1 WPS Office ARM64位 桌面版安装说明
@@ -1148,7 +1328,7 @@ sudo ./install.sh
 ```
 qq_pkg='linuxqq_2.0.0-b1-1024_arm64.deb' ; \
 cd ~ ; \
-wget https://github.com/openfans-community-offical/Debian-Pi-Aarch64/raw/master/add-app/$qq_pkg ; \
+wget https://raw.githubusercontent.com/openfans-community-offical/Debian-Pi-Aarch64/master/add-app/$qq_pkg ; \
 apt install ./$qq_pkg -y ; \
 rm -rf ./$qq_pkg
 ```
@@ -1292,7 +1472,7 @@ sudo ./install
 |默认管理地址|http://你树莓派的IP地址:28888/|
 |默认Web管理用户及密码|openfans/openfans|
 |宝塔虚拟机ssh端口|2222|
-|宝塔虚拟机root默认密码|rapberry|
+|宝塔虚拟机root默认密码|raspberry|
 
 **如何ssh连接到宝塔虚拟机?**
 
@@ -1614,7 +1794,7 @@ sudo  sh  ./sys_upgrade
 
 ### 7-2联系方式
 
-树莓派爱好者基地64位系统专用QQ交流群：703626518
+树莓派爱好者基地64位系统专用**QQ交流群：** *703626518(已满)* ，**976102807 (新群)**
 
 树莓派爱好者基地官网：[www.pifan.org](http://www.pifan.org)
 
@@ -1682,7 +1862,9 @@ UMRnInside : *项目 [UMRnInside/RPi-arm64](https://github.com/UMRnInside/RPi-ar
 
 Andreiw : *项目 [andreiw/RaspberryPiPkg](https://github.com/andreiw/RaspberryPiPkg) (1.0版本引用的EFI固件)*
 
-sakaki : *[Link](https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=244478) (内核引导的问题参考)*
+sakaki(1) : *[Link](https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=244478) (内核引导的问题参考)*
+
+Sakaki(2) : *H264-V4L2-M2M硬件加速命令行播放器参考*
 
 margetts99 : *[Link](http://bbs.pifan.org/?thread-132.htm) (WPS的集成建议和共享问题的报告)*
 
@@ -1692,4 +1874,4 @@ Windows Arm On Qemu: *参考 [链接1](https://github.com/virtio-win/kvm-guest-d
 
 ----
 
-Once again despise the attack and slander called the dog egg X!
+Once again despise the attack and slander called the "Dog Egg Brother" !

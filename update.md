@@ -14,6 +14,119 @@
 
 ----
 
+## 2019.12.30 &nbsp;&nbsp;// **System v2.0 U2 Release ver. 1230 Update.**
+
+```
+[A Chinese Team]
+
+1. The system had upgrade to upstream Debian Buster 10.2 and update to 1230;
+
+2. The Kernel and firmware upgrade to "4.19.88-OPENFANS+20191230-v8" as support as 
+newest LTS main-line;
+   
+3. Upkg pkg update to version "2019.12.30-2.0-U2";
+
+4. Upgrade Docker pkg.
+```
+
+----
+
+## 2019.11.30 &nbsp;&nbsp;// **System v2.0 U1 Release ver. 1130 Upgraded.**
+
+```
+[A Chinese Team]
+
+1. The system had upgrade to upstream Debian Buster 10.2 and update to 1130;
+
+2. The Kernel and firmware upgrade to "4.19.86-OPENFANS+20191130-v8" as support as 
+newest LTS main-line;
+   
+3. Upkg pkg update to version "2019.11.30-2.0-U1";
+
+4. Upgrade the Mesa pkg;
+
+5. Add "sid-used";
+
+6. The **2.0-U1** version is the ending for the lifetime of `final 2.0 main-line`.
+```
+
+----
+
+## 2019.11.25 &nbsp;&nbsp;// **System v2.0 Release ver. 1117 Updated.**
+
+```
+[A Chinese Team]
+
+1. The system had upgrade to upstream Debian Buster 10.2 and update to 1125;
+
+2. The Kernel and firmware upgrade to "4.19.85-OPENFANS+20191125-v8" 
+   as support as newest LTS main-line;
+   
+3. Upkg pkg update to version "2019.11.25";
+
+4. Upgrade Mesa, bluealsa, dhcpcd5, pi-bluetooth, Docker, Wifi-Firmware and etc.
+
+5. A screensaver issue had fixed for Desktop Full-Featured version;
+
+6. Upgrade rpi-eeprom to version 2.4-1;
+```
+
+----
+
+## 2019.11.17 &nbsp;&nbsp;// **System v2.0 Release ver. 1117 Upgraded.**
+
+```
+[A Chinese and an America Team]
+
+1. The system had upgrade to upstream Debian Buster 10.2 and update to 1117;
+
+2. The Kernel and firmware upgrade to "4.19.83-OPENFANS+20191116-v8" 
+   as support as newest LTS main-line;
+
+3. Upkg pkg update to version "2019.11.16";
+
+4. Add catfish and unrar for Desktop Full-Featured version support;
+
+5. Add a Web VNC interface support for Desktop Full-Featured version;
+
+6. Upgrade QEMU-KVM pkg version to the newest upstream;
+```
+
+## 2019.11.10/11 &nbsp;&nbsp;// **System v2.0 Release ver. 1110/1111 Upgraded.**
+
+```
+[A Chinese Team]
+
+1. This is the first time we used a real powerfull Arm64-env physical server to build the whole  
+   system without ross compilation tools and get better performence with the native performance, 
+   a really stronger server Cavium ThunderX which has 96-cores CPU is very fast and quickly;
+
+2. Kernel and firmware upgrade to "4.19.81-OPENFANS+20191013-v8" 
+   as support as newest LTS main-line;
+
+3. System update to "2019-11-10" the mainline of upstream;
+
+4. Mesa pkg upgrade to version "19.2.3";
+
+5. upkg pkg update to version "2019.11.10";
+
+6. Add a command line video player support with H264-V4L2-M2M hardware acceleration,  
+   and fixed some issues for hardware acceleration of video stream;
+
+7. Make a new build system on a Arm64-env physical server;
+
+8. Add a new macOS Catalina pic as the default desktop background for 
+   Desktop Full-Featured version;
+
+9. QQ and WPS Office are integrated by default in the Desktop Full-Featured version;
+
+10. Rebuild the whole Deepin system and upgrade to the 15.5 SP2 version;
+
+11. Deepin system which version is 2011-11-10 (15.5 SP2) had supported upgrade now.
+```
+
+---
+
 ## 2019.10.13 &nbsp;&nbsp;// **System v2.0 Release ver. 1013 Updated.** 
 
 ```

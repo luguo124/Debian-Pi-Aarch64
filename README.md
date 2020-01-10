@@ -6,8 +6,10 @@
 
 *This is the first 64-bit system in the world to support all Raspberry Pi 64-bit hardware!!! (Include: 2Bv1.2, 3B, 3B+, 3A+, 4B)*
 
+![catalina](./images/catalina.jpg)
+
 ```
-There are always people of all kinds of people who do everything possible to find someone's handle, 
+There are always someone who do everything possible to find other's trouble, 
 in order to avoid misleading,
 We will explain all the help and reference that we have used and applied. 
 If there are any omissions, please feel free to give us feedback in time.
@@ -48,17 +50,23 @@ The **"Old Readme"** was viewed **[here](./README_ORGI.md).** ( - Just A Chinese
 
 ## Notice:
 
-*The official version 2.0 is most suggested to upgrade to the latest firmware version:* **"2019-10-13"**
+*The official version 2.0 is most suggested to upgrade to the latest firmware version:* **"2019-12-30-2.0-U2"**
 
-*The system version "2019-10-13-v2019-2.0-Release" don't need upgrade the kernel and firmware to "2019-10-13"*
+*The system version "2019-12-30-v2019-2.0-U2-Release" don't need upgrade the kernel and firmware to "2019-12-30-2.0-U2"*
 
 ```
 The latest version of the system:
-2019-10-13-v2019-2.0-Release
+2019-12-30-v2019-2.0-U2-Release
 
 The latest version of kernel and firmware:
-2019-10-13-v2019-2.0-Release (recommended update)
+2019-12-30-v2019-2.0-U2-Release (recommended update)
 ```
+
+The 2.0-U1 version is the ending for the lifetime of final 2.0 main-line.
+
+We are about to open a plan for the new version 2.X in 2020, so stay tuned! 
+
+*Focus on Edge computing and IoT core-net and hardware for the RPI ...*
 
 ## Donation
 
@@ -128,7 +136,7 @@ Thanks for your donation! We'll get the greatest power from your encourage!
 
 [3-9. TTY Display Chinese Font (Not Remote) Of Chinese Environment](./README.md#3-9-tty-display-chinese-font-not-remote-of-chinese-environment)
 
-[3-10. Install VNC Remote Desktop Of macOS Mojave Theme Desktop Environment](./README.md#3-10-install-vnc-remote-desktop-of-macos-mojave-theme-desktop-environment)
+[3-10. Web Interface VNC Remote Desktop Of macOS Mojave Theme Desktop Support](./README.md#3-10-web-interface-vnc-remote-desktop-of-macos-mojave-theme-desktop-support)
 
 [3-11. Switch Sound Output Channels](./README.md#3-11-switch-sound-output-channels)
 
@@ -143,6 +151,8 @@ Thanks for your donation! We'll get the greatest power from your encourage!
 [3-16. FAQ NOTE](./README.md#3-16-faq-note)
 
 [- 3-16.1 Using Profiles To Connect To The Wireless Networks Of Graphical Desktop Environment](./README.md#3-161-using-profiles-to-connect-to-the-wireless-networks-of-graphical-desktop-environment)
+
+[- 3-16.2 Version mismatch when installing packages using APT command](./README.md#3-162-version-mismatch-when-installing-packages-using-apt-command)
 
 [3-17. Extra Application Instructions](./README.md#3-17-extra-application-instructions)
 
@@ -386,7 +396,9 @@ All the version 2.0 system images are used "ext4" file system as default, the Ts
 |Standard VM kit|★|★|★|X|
 |BT-Panel kit|★|★|★|X|
 
-**Note:**
+----
+
+**(1)Note:**
 
 **★ :** Stands for supported and default enabled. It can directly be used.
 
@@ -395,6 +407,44 @@ All the version 2.0 system images are used "ext4" file system as default, the Ts
 (There will be an instructions for how to use this service in this document.)
 
 **X :** Stands for not supported.
+
+**(2)Service control**
+
+Docker Container
+
+```
+Manual start: systemctl start docker.service
+Manual stop: systemctl stop docker.service
+Enable autostart: systemctl enable docker.service
+Disable autostart: systemctl disable docker.service
+```
+
+CecOS CaaS Platform (service port: 8443)
+
+```
+Manual start: systemctl start cecos-caas.service
+Manual stop: systemctl stop cecos-caas.service
+Enable autostart: systemctl enable cecos-caas.service
+Disable autostart: systemctl disable cecos-caas.service
+```
+
+WebGUI Manager (service port: 9090)
+
+```
+Manual start: systemctl start cockpit.socket
+Manual stop: systemctl stop cockpit.socket
+Enable autostart: systemctl enable cockpit.socket
+Disable autostart: systemctl disable cockpit.socket
+```
+
+Web SSH Client (service port: 4200)
+
+```
+Manual start: systemctl start shellinabox.service
+Manual stop: systemctl stop shellinabox.service
+Enable autostart: systemctl enable shellinabox.service
+Disable autostart: systemctl disable shellinabox.service
+```
 
 ----
 
@@ -747,7 +797,7 @@ We have adopted **lz4** with very high compression speed and high compression ra
 
 ### 2-7. macOS-Mojave Theme Desktop
 
-![desktop](./images/apk0.png)
+![desktop](./images/apk0.jpg)
 
 The default desktop theme uses a desktop that mimics the macOS Mojave theme.
 
@@ -899,6 +949,8 @@ Edit the script file **"/boot/rc-local"** and add the custom script content befo
 
 ### 3-8. DO NOT Upgrade The Deepin Desktop ENV
 
+**The version which was after 2019-11-10 (Also included) had supported upgrade!**
+
 Cuz of compatibility issues with the Deepin system and upstream warehouses (deepin itself), it is strongly discouraged from using any of the following commands or any other operations that would cause the system to be upgraded unless you know what you need to do!!!
 
 All Deepin version systems need attention, including all Deepin versions of 1.0 and 2.0!
@@ -939,9 +991,102 @@ sudo adduser you create your own other user name (if any) video
 fbterm
 ```
 
-### 3-10. Install VNC Remote Desktop Of macOS Mojave Theme Desktop Environment
+### 3-10. Web Interface VNC Remote Desktop Of macOS Mojave Theme Desktop Support
 
-Install RealVNC
+![web VNC](./images/web-vnc.jpg)
+
+**Note:**
+
+The **macOS Mojave theme custom desktop** (*Desktop environment, Full-Featured*) which the version is after 2019-11-17 (also include) had support web interface VNC remote desktop by default.
+
+```
+The default VNC access password is: raspberry
+The default VNC web interface address is: http://your-rpi-ip-addr:5901
+The default VNC client address is: your-rpi-ip-addr:5900
+```
+
+*You can not used web interface and client to connect the same vnc server at the same time.*
+
+If you wanna used a client to connect the vnc server, we suggest you to use RealVNC client, you can click [here](https://www.realvnc.com/en/connect/download/viewer/) to download RealVNC client.
+
+#### Instructions for web interface VNC remote desktop usage
+
+There are two ways to used the default VNC:
+
+**● Connected a real monitor**
+
+```
+The VNC was default enabled, you needn't do nothing.
+```
+
+**● Without any monitor connected**
+
+```
+The VNC was default enabled, but if you haven't any monitor to connected, you should use a 
+virutal monitor, run command: "virtual-monitor-enable" to enable virutal monitor mode, 
+after this the system will reboot.
+```
+
+#### IMPORTANT
+
+```
+If you wanna enable the virtual monitor mode, you can not connect to a real monitor the 
+same time, if you had enabled the virtual monitor mode, run command :
+
+"virtual-monitor-disable" 
+
+to back to the normal when you wanna connect to a real monitor back.
+```
+
+**Note: The "Virtual Monitor Mode" is not enabled by default.**
+
+#### Commands for default VNC
+
+**virtual-monitor-enable**
+
+```
+Enable the virtual monitor mode, without connect a real monitor.
+After this, the system will reboot.
+```
+
+**virtual-monitor-disable**
+
+```
+Disable the virtual monitor mode, back to Normal and connect a real monitor.
+After this, the system will reboot.
+This is a system default mode.
+```
+
+**enable-vnc**
+
+```
+Enable the default VNC service.
+After this, the system will reboot.
+The system is enabled by default.
+```
+
+**disable-vnc**
+
+```
+Disable the default VNC service.
+After this, the system will reboot.
+```
+
+**vnc-passwd**
+
+```
+Change the default VNC access password.
+```
+
+----
+
+If you wanna install another VNC server packages, just like RealVNC, you can do this bellow:
+
+(You need to disable our system default VNC service before installation)
+
+*But we still suggest you to use the default VNC of system by us.*
+
+#### Install RealVNC Remote Desktop Of macOS Mojave Theme Desktop Environment
 
 ```
 vnc_pkg='VNC-Server-6.6.0-Linux-ARM.deb' ; \
@@ -1102,12 +1247,21 @@ Vesrion 2.0: System Default Use the **HDMI** to output audio.
 The commands for switching the sound output:
 
 ```
-amixer cset numid s 3 2
+amixer cset numid=3 2
 
 ## Set the output here to 2, which is HDMI.
 ## Setting the output to 1 switch to the analog signal (that is, the headphone connector).
 ## The default setting is 0, which represents automatic selection.
 ```
+
+After you have finished modifying your audio settings, you need to restart your Raspberry Pi in order for your changes to take effect.
+
+**If you're still not getting sound via HDMI:**
+
+In some rare cases, it is necessary to edit config.txt to force HDMI mode (as opposed to DVI mode, which does not send sound). 
+
+You can do this by editing **/boot/config.txt** and setting **hdmi_drive=2** , then rebooting for the change to take effect.
+
 
 ### 3-12. 32-Bit Software Armhf Support
 
@@ -1200,6 +1354,29 @@ sed -i  \
 
 Finally, after restart all done.
 
+#### 3-16.2 Version mismatch when installing packages using APT command
+
+**Problem Description:**
+
+When using the command apt to install the deb package online, you may encounter the problem that a matching version cannot be found, such as:
+
+```
+The following packages have unmet dependencies:
+ package-name-1 : Depends: package-name-2 ( >= x.x.x-xxx-2 ) but x.x.x-xxx-1 is to be installed
+              Recommends: package-name-3 but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+```
+
+**Reason:**
+
+This is because some of the newer upstream packages installed on our system do not match the version of the packages in the default repository.
+
+**Solution:**
+
+To temporarily enable the upstream **sid** software repository, add the `sid-used sudo` command before your **apt** command:
+
+Example: `sid-used sudo` **apt install package-name**
+
 ### 3-17. Extra Application Instructions
 
 #### 3-17.1 WPS Office Arm 64-bit Desktop Installation Note
@@ -1225,7 +1402,7 @@ Make sure your system can connect to internet, then run the commands below as ro
 ```
 qq_pkg='linuxqq_2.0.0-b1-1024_arm64.deb' ; \
 cd ~ ; \
-wget https://github.com/openfans-community-offical/Debian-Pi-Aarch64/raw/master/add-app/$qq_pkg ; \
+wget https://raw.githubusercontent.com/openfans-community-offical/Debian-Pi-Aarch64/master/add-app/$qq_pkg ; \
 apt install ./$qq_pkg -y ; \
 rm -rf ./$qq_pkg
 ```
@@ -1383,7 +1560,7 @@ if the virtual machine is down.
 |Default Management Address|http://IP-Address-of-your-Raspberry-Pi:28888/|
 |Default Web Management User and Password|openfans/openfans|
 |BT-Panel Virtual Machine SSH Port|2222|
-|BT-Panel virtual machine root default password|rapberry|
+|BT-Panel virtual machine root default password|raspberry|
 
 **How to use ssh to connect to BT-Panel virtual machine?**
 
@@ -1711,7 +1888,7 @@ You can choose to scan Alipay for direct sponsorship to support us, and we guara
 
 ### 7-2 Contact Info.
 
-Raspberry Pi Fan Base 64-bit OS special official community QQ group: **703626518**
+Raspberry Pi Fan Base 64-bit OS special official community **QQ group:** *703626518(Full)* , **976102807(new)**
 
 Raspberry Pi Fan Base official website: **[www.pifan.org](http://www.pifan.org)**
 
@@ -1792,7 +1969,9 @@ UMRnInside :Project [UMRnInside/RPi-arm64](https://github.com/UMRnInside/RPi-arm
 
 Andreiw: Project [andreiw/RaspberryPiPkg](https://github.com/andreiw/RaspberryPiPkg)(EFI firmware referenced in version 1.0)
 
-Sakaki : [link](https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=244478) (kernel boot problem reference)
+Sakaki(1) : [link](https://www.raspberrypi.org/forums/viewtopic.php?f=56&t=244478) (kernel boot problem reference)
+
+Sakaki(2) : A H264-V4L2-M2M hardware acceleration command line video player.
 
 Margetts99 : [link](http://bbs.pifan.org/?thread-132.htm) (WPS integration recommendations and sharing issues report)
 
@@ -1802,4 +1981,4 @@ Windows Arm On Qemu: *see [link1](https://github.com/virtio-win/kvm-guest-driver
 
 ----
 
-Once again despise the attack and slander called the dog egg X!
+Once again despise the attack and slander called the "Dog Egg Brother" !
